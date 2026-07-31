@@ -1,8 +1,23 @@
 aid: otis
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/otis.png
 name: Otis
-description: Otis is a company surfaced as a portfolio company of kindred-ventures, union-square-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Otis was an alternative-asset investing platform that let retail investors buy fractional
+  shares in collectibles such as contemporary art, sneakers, trading cards, comics, and cultural
+  memorabilia, backed by Kindred Ventures and Union Square Ventures. Otis was acquired by Public
+  Holdings (Public.com) in 2022 and folded into Public's alternative-assets investing product;
+  its former domain withotis.com now 301-redirects to public.com. The standalone Otis brand is
+  defunct and exposes no independent developer or API surface as of this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/otis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +26,20 @@ x-backed-by:
 - union-square-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: public-com
+x-notes: 'withotis.com 301-redirects to public.com (verified 2026-07-20); no independent Otis API surface.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Fintech
+- Investing
+- Alternative Assets
+- Collectibles
+- Wealth Management
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/otis-domain-security.yml
 - type: Website
   url: https://withotis.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
