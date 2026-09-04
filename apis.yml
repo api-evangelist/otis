@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://withotis.com/', status: 301, note: 'declared website redirects to https://public.com/ — a different registrable domain (withotis.com -> public.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/otis.png
 name: Otis
 description: Otis was an alternative-asset investing platform that let retail investors buy fractional
